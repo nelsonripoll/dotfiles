@@ -31,8 +31,8 @@
 ```
 # View and Create
 :ls                    # view buffer list
-:e filename            # short for :edit, add file to buffer and open it
-:bad filename          # short for :badd, add file to buffer without opening it
+:e {file}              # short for :edit, add file to buffer and open it
+:bad {file}            # short for :badd, add file to buffer without opening it
 
 # Navigate Buffers
 :b N                   # short for :buffer, edit buffer N from the list
@@ -61,4 +61,17 @@
 :N,Mbun                # unloads all buffers in the range N to M
 :bw N1 N2 ...          # short for :bwipeout, wipeout buffer N1, N2, etc from both list and memory and all related buffer things
 :N,Mbw                 # wipeout all buffers in the range N to M
+```
+
+## TABS
+
+```
+:tabe {file}           # open file in a new tab
+```
+
+## NETRW
+
+```
+:Explore
+:Texplore
 ```
